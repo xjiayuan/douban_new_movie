@@ -8,9 +8,10 @@
 import scrapy
 
 
-class Douban250Item(scrapy.Item):
+class DoubanNewMovieItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     movie_name = scrapy.Field()
-    star = scrapy.Field()
-    quote = scrapy.Field()
+    movie_star = scrapy.Field()
+    movie_url = scrapy.Field()
+    

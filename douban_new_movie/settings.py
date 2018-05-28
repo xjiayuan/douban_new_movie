@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for douban250 project
+# Scrapy settings for douban_new_movie project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'douban250'
+BOT_NAME = 'douban_new_movie'
 
-SPIDER_MODULES = ['douban250.spiders']
-NEWSPIDER_MODULE = 'douban250.spiders'
+SPIDER_MODULES = ['douban_new_movie.spiders']
+NEWSPIDER_MODULE = 'douban_new_movie.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'douban250 (+http://www.yourdomain.com)'
+#USER_AGENT = 'douban_new_movie (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'douban250.middlewares.Douban250SpiderMiddleware': 543,
+#    'douban_new_movie.middlewares.DoubanNewMovieSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'douban250.middlewares.Douban250DownloaderMiddleware': 543,
+#    'douban_new_movie.middlewares.DoubanNewMovieDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'douban250.pipelines.Douban250Pipeline': 300,
+    'douban_new_movie.pipelines.DoubanNewMoviePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
